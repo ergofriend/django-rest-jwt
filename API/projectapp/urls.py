@@ -1,4 +1,4 @@
-"""application URL Configuration
+"""projectapp URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
-from api.urls import router as api_router
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(api_router.urls)),
+    path('api/', include('api.urls')),
+    path('', RedirectView.as_view(url='api/')),
 ]
