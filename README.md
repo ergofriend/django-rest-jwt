@@ -9,6 +9,6 @@
 ## backend
 
 - Django
-- Django REST dramework
+- Django REST framework
 - django filter
 - Djoser
