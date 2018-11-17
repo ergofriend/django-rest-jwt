@@ -10,5 +10,5 @@
 
 - Django
 - Django REST framework
-- django filter
+- Django filter
 - Djoser

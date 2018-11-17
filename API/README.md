@@ -1,3 +1,11 @@
+# REST API SERVER
+
+## PATH
+
+- admin/
+- api/
+- api/auth
+
 ## Tips
 
 ### models.py
